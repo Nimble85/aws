@@ -21,3 +21,14 @@ variable "policy_arns" {
   #type        = string
   description = "ARN of policy to be associated with the created IAM user"
 } 
+
+### NETWORK Module ###
+variable "vpc_cidr" {
+    default = "10.0.0.0/16"  
+    description = "Set your desired IP address range"
+}
+
+variable "subnet_cidr" {
+    default = "10.0.0.0/24"   
+    description = "Set a subnet IP address range within your VPC's range"
+}

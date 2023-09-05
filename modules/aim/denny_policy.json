@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Deny",
+        "Action": [
+          "ec2:TerminateInstances",  
+          "s3:DeleteBucket",         
+          "lambda:DeleteFunction"    
+        ],
+        "Resource": "*",
+        "Condition": {
+          "StringEqualsIfExists": {
+            "ec2:ResourceTag/Name": "ResourceNameToDeny*",
+            "s3:ResourceTag/Name": "ResourceNameToDeny*",
+            "lambda:FunctionName": "FunctionNameToDeny*"
+          },
+          "StringEquals": {
+            "aws:RequestTag/Name": "DenyDeleteTag"
+          },
+          "ForAnyValue:StringNotEquals": {
+            "aws:Requester": [
+              "arn:aws:iam::AccountID:root",
+              "arn:aws:sts::AccountID:assumed-role/RoleName/RoleSessionName"
+            ]
+          },
+          "ForAllValues:StringEquals": {
+            "aws:RequestedRegion": [
+              "us-east-1",
+              "us-west-2"
+              
+            ]
+          }
+        }
+      }
+    ]
+  }

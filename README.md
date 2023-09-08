@@ -15,7 +15,7 @@ aws by terraform code
 * AWS
 
 - [ ] IAM
-- [ ] Role & User
+- [x] Role & User
 - [ ] Policy - types (managed/ customs / ?/?/ )
 - [ ] Attributs 
 - [ ] AWS ID

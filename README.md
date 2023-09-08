@@ -23,5 +23,5 @@ aws by terraform code
 
 
 ```
-![title](/git/aws/src/iam_group.png)
+![](./src/iam_group.png)
 ```

@@ -23,5 +23,5 @@ aws by terraform code
 
 
 ```
-![](src/iam_group.png)
+![Alt Text](src/iam_group.png)
 ```

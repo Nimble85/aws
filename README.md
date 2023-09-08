@@ -22,6 +22,4 @@ aws by terraform code
 - [ ] Conditions
 
 
-```
 ![Alt Text](src/iam_group.png)
-```

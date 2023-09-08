@@ -23,5 +23,5 @@ aws by terraform code
 
 
 ```
-![screen](/src/iam_group.png)
+![screen](./src/iam_group.png)
 ```

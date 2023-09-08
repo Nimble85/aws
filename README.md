@@ -22,4 +22,9 @@ aws by terraform code
 - [ ] Conditions
 
 
+# Users Group Policies 
 ![Alt Text](src/iam_group.png)
+# Role
+![Alt Text](src/iam_role.png)
+# Permission
+![Alt Text](src/iam_permission.png)
